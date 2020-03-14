@@ -15,10 +15,11 @@ class EmailAddressParser
  attr_accessor :emails
 
   def  initialize()
-    @emails
+    @email
   end
 def parse(email)
     # binding.pry
+    email=email.gsub(/[\s,]/ ,"").split
   @email=@email.split
 end 
   
