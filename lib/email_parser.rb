@@ -14,12 +14,13 @@ require 'pry'
 class EmailAddressParser
  attr_accessor :emails
 
-  def  initialize()
-    @email
+  def  initialize(emails)
+    @emails=emails
   end
+  
 def parse(email)
     # binding.pry
-    email=email.split(/[ |,]/ ,"")
+    emails.split(/[ |,]/ ,"")
 end 
   
 end
