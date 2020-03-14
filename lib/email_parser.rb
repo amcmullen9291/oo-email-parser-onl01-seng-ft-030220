@@ -13,6 +13,9 @@ class EmailAddressParser
   
   def email_separter(string)
     emails = emails.gsub(/\d+(,)\d+/, “”)
+    string.map! do |address| if address contains?("@"&& "." )
+      address=address.to_s 
+      
   end
   
 end
