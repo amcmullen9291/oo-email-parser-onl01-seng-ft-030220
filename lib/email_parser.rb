@@ -13,16 +13,13 @@ class EmailAddressParser
   
   def parse(string)
     vault = []
-    string= string.parse
+    emails = emails.gsub(/\d+(,)\d+/, “”).split
+    string.map! do |address| if address contains?("@" && "." )
+      address=address.to_s 
+      vault<< address
+      vault
+    end
   end 
-    
-  #   emails = emails.gsub(/\d+(,)\d+/, “”).split
-  #   string.map! do |address| if address contains?("@" && "." )
-  #     address=address.to_s 
-  #     vault<< address
-  #     vault
-  #   end
-  # end 
-  # end
+  end
   
 end
