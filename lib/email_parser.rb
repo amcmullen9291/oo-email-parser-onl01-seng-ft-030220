@@ -4,12 +4,12 @@
 # or whitespace (' ').
 require 'csv'
 
-require 'regexp_parser/version'
-require 'regexp_parser/token'
-require 'regexp_parser/scanner'
-require 'regexp_parser/syntax'
-require 'regexp_parser/lexer'
-require 'regexp_parser/parser'
+# require 'regexp_parser/version'
+# require 'regexp_parser/token'
+# require 'regexp_parser/scanner'
+# require 'regexp_parser/syntax'
+# require 'regexp_parser/lexer'
+# require 'regexp_parser/parser'
 
 class EmailAddressParser
  attr_accessor :emails
