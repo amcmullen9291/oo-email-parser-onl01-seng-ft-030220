@@ -10,14 +10,14 @@ require 'csv'
 # require 'regexp_parser/syntax'
 # require 'regexp_parser/lexer'
 # require 'regexp_parser/parser'
-
+require 'pry'
 class EmailAddressParser
  attr_accessor :emails
 
   def  initialize()
     @emails
   end
-  
+  binding.pry
 def parse(email)
   email=email.split
 end 
