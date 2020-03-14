@@ -15,11 +15,11 @@ class EmailAddressParser
  attr_accessor :emails
 
   def  initialize()
-    @emails = emails
+    @emails
   end
   
-def parse(emails)
-  emails=emails.split
+def parse(email)
+  email=email.split
 end 
   
 end
