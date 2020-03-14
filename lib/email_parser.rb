@@ -20,7 +20,7 @@ class EmailAddressParser
 def parse(email)
     binding.pry
 
-  email=email.split
+  @email=@email.split
 end 
   
 end
