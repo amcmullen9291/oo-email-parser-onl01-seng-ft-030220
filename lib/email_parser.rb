@@ -19,5 +19,5 @@ class EmailAddressParser
       vault<< address
       vault
   end
-  
+end 
 end
