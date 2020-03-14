@@ -14,11 +14,11 @@ require 'csv'
 class EmailAddressParser
  attr_accessor :emails
 
-  def  initialize(emails)
+  def  initialize()
     @emails = emails
   end
   
-def parse
+def parse(emails)
 end 
   
 end
