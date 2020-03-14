@@ -12,10 +12,12 @@ class EmailAddressParser
   end
   
   def email_separter(string)
-    emails = emails.gsub(/\d+(,)\d+/, “”)
-    string.map! do |address| if address contains?("@"&& "." )
+    vault = []
+    emails = emails.gsub(/\d+(,)\d+/, “”).split
+    string.map! do |address| if address contains?("@" && "." )
       address=address.to_s 
-      
+      vault<< address
+      vault
   end
   
 end
