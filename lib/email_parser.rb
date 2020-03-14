@@ -19,8 +19,7 @@ class EmailAddressParser
   end
 def parse(email)
     # binding.pry
-    email=email.gsub(/[ |,]/ ,"").split
-  @email=@email.split
+    email=email.split(/[ |,]/ ,"")
 end 
   
 end
