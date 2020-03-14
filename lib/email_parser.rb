@@ -18,6 +18,8 @@ class EmailAddressParser
       address=address.to_s 
       vault<< address
       vault
+    end
+  end 
   end
-end 
+  
 end
