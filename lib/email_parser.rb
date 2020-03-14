@@ -7,18 +7,8 @@ require 'csv'
 class EmailAddressParser
  attr_accessor :emails
 
-
   def  initialize(emails)
     @emails = emails
   end
-# binding.pry
-
-  def parse
-    emails.gsub(/[\s,]/ ,"").strip.split(" ")
-    CSV.parse(emails)
-  end
   
-  def emails 
-    @emails
-  end
 end
