@@ -11,7 +11,7 @@ class EmailAddressParser
     @emails = emails
   end
   
-  def email_separter(string)
+  def parse(string)
     vault = []
     emails = emails.gsub(/\d+(,)\d+/, “”).split
     string.map! do |address| if address contains?("@" && "." )
