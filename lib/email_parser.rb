@@ -13,5 +13,6 @@ class EmailAddressParser
   
   def email_separter(string)
     emails = emails.gsub(/\d+(,)\d+/, “”)
-    
+  end
+  
 end
